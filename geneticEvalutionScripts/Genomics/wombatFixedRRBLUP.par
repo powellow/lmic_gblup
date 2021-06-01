@@ -1,0 +1,32 @@
+COM Genetic Connectedness Study: Fixed Model with Marker Data
+
+# specify the marker genotype file to be used
+MRKFILE Genotype.txt
+
+# specify the data file and its layout
+DAT Data.txt
+  animal 8000
+  sire 
+  dam
+  herdId 8000
+  herdeff 
+  gv
+  record 
+end
+
+# choose the type of analysis
+ANAL UNI
+
+# specify the model to be fitted
+MODEL
+ RAN animal
+ FIX herdId
+ TR record
+ SUBJ animal
+END
+
+# give starting values for variance compoents
+VAR animal 1
+GENVAR
+VAR error 1
+1 

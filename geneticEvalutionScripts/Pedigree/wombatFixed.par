@@ -1,0 +1,32 @@
+COM Genetic Connectedness Study: Fixed Model with User Pedigree - Initial Run to Trim Pedigree to Linked Animals Only
+
+# specify the pedigree file to be used
+PED Ped.txt
+
+# specify the data file and its layout
+DAT Data.txt
+  animal
+  sire 
+  dam
+  herdId 32000
+  herdeff 
+  gv
+  record 
+end
+
+# choose the type of analysis
+ANAL UNI
+
+# specify the model to be fitted
+MODEL
+ RAN animal NRM
+ FIX herdId
+ TR record
+END
+
+# give starting values for variance compoents
+VAR animal 1
+GENVAR
+VAR error 1
+1
+

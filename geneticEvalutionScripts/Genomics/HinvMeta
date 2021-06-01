@@ -1,0 +1,24 @@
+Summary of options for H-inverse created: "animal.gin"
+         0.00000                  alpha         0.00000    
+         1.00000                  beta
+         1.00000                  lambda
+        0.500000E-01              epsilon
+         1.00000                  tau
+         1.00000                  omega
+        0.500000E-01              base limit
+   FREQ                           centering of marker counts
+   COLLEAU                        method to build/invert A22
+   VRADEN1                        method to build GRM
+   FULLINV                        method to invert GRM
+   PEDFI                          method to determine "core" animals
+   GIN                            form of output of H-inverse
+             50000          50000 no. of markers
+               0                  no. of non-genotyped animals
+             8000                 no. of genotypes
+               0                  no. of "core" genotypes
+               0                  no. of genetic groups
+              -9                  group number omitted (-9 for none)
+         0.00000                  log determinant of H (0 -> not calculated)
+         45.9969                  Denominator of G
+         1.00000                  MF scale factor for H-inverse
+ T  + alpha J before lambda

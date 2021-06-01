@@ -1,0 +1,13 @@
+# WOMBAT Example 22/A: auxiliary .par file to build GRM inverse with defaults
+
+RUNOP --hinv
+
+PED TrimPed.txt
+MRK Genotypes.txt
+
+SPECIAL
+  HINV SNP 50000
+  HINV epsilon 0.05d0
+  HINV out GIN animal 
+END
+

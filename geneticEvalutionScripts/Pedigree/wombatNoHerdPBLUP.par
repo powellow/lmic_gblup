@@ -1,0 +1,31 @@
+COM Genetic Connectedness Study: No Herd Model with User Pedigree
+
+# specify the pedigree file to be used
+PED ReducedPedFile.dat
+
+# specify the data file and its layout
+DAT Data.txt
+  animal
+  sire 
+  dam
+  herdId 8000
+  herdeff 
+  gv
+  record 
+end
+
+# choose the type of analysis
+ANAL UNI
+
+# specify the model to be fitted
+MODEL
+ RAN animal NRM
+ TR record
+END
+
+# give starting values for variance compoents
+VAR animal 1
+GENVAR
+VAR error 1
+1
+
